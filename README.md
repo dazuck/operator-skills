@@ -53,45 +53,110 @@ In Claude Code or Claude Desktop:
 
 ## Available Skills
 
-*Skills will be populated after first sync.*
+### Daily Operations
+_The workflows you do every day_
 
-### Think Better
-- **coach** — Strategic thinking partner with radical candor
-- **reality-check** — Pressure test plans before committing
-- **interview** — Flesh out requirements with smart questions
-- **create-briefing** — Dual-audience briefing documents
-- **prompt-improver** — Transform rough prompts into optimized instructions
-- **technical-orientation** — Explain tech to non-engineers
+| Skill | What It Does |
+|-------|--------------|
+| **inbox-commander** | Triage email and process support requests in minutes |
 
-### Work Faster
-- **inbox-commander** — Email triage and prioritization
-- **skill-customizer** — Adapt skills to your environment
+### Strategic Thinking
+_Think through problems before acting_
 
-### Safety
-- **sensitive-content-scanner** — Scan for sensitive content before sharing
+| Skill | What It Does |
+|-------|--------------|
+| **coach** | Learn any domain fast with an expert thinking partner |
+| **reality-check** | Find the gaps in your plan before your stakeholders do |
+| **interview** | Flesh out requirements with non-obvious questions |
+| **create-briefing** | Create shareable briefing documents (dual-audience: human + AI) |
+
+### Research & Analysis
+_Investigate, evaluate, recommend_
+
+| Skill | What It Does |
+|-------|--------------|
+| **technical-orientation** | Explain technical things to non-engineers quickly |
+
+### AI Boosts
+_Advanced hacks that make AI work better_
+
+| Skill | What It Does |
+|-------|--------------|
+| **prompt-improver** | Turn rough ideas into AI prompts that actually work |
+| **skill-customizer** | Adapt any skill to your specific workflow |
+| **ralph-loop-creator** | Generate structured prompts for autonomous AI work |
+| **sensitive-content-scanner** | Scan files for sensitive content before sharing |
+
+### Role-Specific
+_Install if relevant to your responsibilities_
+
+**Finance Ops:**
+
+| Skill | What It Does |
+|-------|--------------|
+| **credits-inventory** | Find the startup credits you're not using |
+| **monthly-financials** | Turn bookkeeper's export into runway insights *(coming soon)* |
+
+## What's the Difference?
+
+**Claude can be your:**
+- **Thought partner** — Coach, Reality Check, Interview
+- **Tireless assistant** — Inbox Commander
+- **Expert researcher** — Technical Orientation
+- **AI enhancer** — Prompt Improver, Skill Customizer, Ralph Loop Creator
+
+## Skill Structure
+
+Each skill lives in its own directory:
+
+```
+skills/
+├── coach/
+│   ├── SKILL.md              # Main skill definition
+│   └── references/           # Supporting files
+│       ├── coaching-modes.md
+│       └── mental-models.md
+├── inbox-commander/
+│   ├── SKILL.md
+│   └── references/
+│       ├── classification-rules.md
+│       └── known-senders.md
+└── ...
+```
 
 ## Customization
 
 Skills work out of the box, but they're better when personalized.
 
-See [CUSTOMIZATION-GUIDE.md](./CUSTOMIZATION-GUIDE.md) for:
-- All placeholders and what they do
-- How to quickly personalize everything
-- Optional enhancements per skill
+**Quick setup:**
+1. Read [CUSTOMIZATION-GUIDE.md](./CUSTOMIZATION-GUIDE.md)
+2. Fill in placeholders with your values
+3. Add your own context to `references/` files
+
+**Examples of customization:**
+- Add your preferred newsletter senders to inbox-commander
+- Set your knowledge archive path for coach
+- Add your investor relationships to credits-inventory
 
 ## Platform Compatibility
+
+These skills work across Claude interfaces:
 
 | Platform | Status |
 |----------|--------|
 | Claude Code | Full support |
 | Claude Desktop | Full support |
 | Claude Co-work | Skills supported |
+| Claude API | Can load skills programmatically |
 
 ## Contributing
 
-PRs welcome. Please:
+Found a bug? Have an improvement? PRs welcome.
+
+Please:
 - Keep skills focused (one job per skill)
-- Include examples
+- Include examples in SKILL.md
+- Test before submitting
 - No personal data in examples
 
 ## License
@@ -104,4 +169,5 @@ Built by operators, for operators. Part of the [Operator Superpowers](https://op
 
 ---
 
-*This repo is synced from private skills using sync-skills-product.*
+*Last synced: 2026-01-15*
+*Skills: 12 (11 active + 1 coming soon)*
