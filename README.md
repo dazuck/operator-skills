@@ -12,7 +12,13 @@ Skills are instruction sets that tell Claude how to handle specific tasks. Inste
 
 ## Install
 
-### Claude Desktop (Recommended)
+### Claude Code
+
+```bash
+claude mcp add-skill gh:dazuck/operator-skills
+```
+
+### Claude Desktop
 
 1. Download the skill you want as a ZIP (or [download all](https://github.com/dazuck/operator-skills/archive/refs/heads/main.zip))
 2. Go to **Settings → Capabilities**
@@ -23,13 +29,7 @@ Skills load automatically when relevant. [Learn more about Skills](https://suppo
 
 > **Note:** Skills require Claude Pro, Max, Team, or Enterprise.
 
-### Claude Code
-
-```bash
-claude mcp add-skill gh:dazuck/operator-skills
-```
-
-### Manual (Other AI Tools)
+### Manual
 
 Copy skill folders to your AI tool's custom instructions directory:
 
