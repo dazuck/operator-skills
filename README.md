@@ -57,6 +57,11 @@ cp -r operator-skills/skills/* ~/.claude/skills/
 - **credits-inventory** — Find startup credits and perks you're not using
 - **monthly-financials** — Bookkeeper export → runway insights *(coming soon)*
 
+### People Ops
+
+- **hiring-helper** — Screen candidates against a proven hiring framework
+- **onboarding-plan** — New hire onboarding that doesn't wing it *(coming soon)*
+
 ## Customization
 
 Skills work out of the box. Some have `[YOUR_*]` placeholders you can fill in.
