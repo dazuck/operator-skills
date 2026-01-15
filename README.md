@@ -29,40 +29,30 @@ cp -r operator-skills/skills/* ~/.claude/skills/
 
 ### Daily Operations
 
-| Skill | What It Does |
-|-------|--------------|
-| **inbox-commander** | Email triage and prioritization |
+- **inbox-commander** — Email triage and prioritization
 
 ### Strategic Thinking
 
-| Skill | What It Does |
-|-------|--------------|
-| **coach** | Expert thinking partner for any domain |
-| **reality-check** | Find gaps in plans before stakeholders do |
-| **interview** | Extract requirements with non-obvious questions |
-| **create-briefing** | Shareable briefing docs (human + AI readable) |
+- **coach** — Expert thinking partner for any domain
+- **reality-check** — Find gaps in plans before stakeholders do
+- **interview** — Extract requirements with non-obvious questions
+- **create-briefing** — Shareable briefing docs (human + AI readable)
 
 ### Research & Analysis
 
-| Skill | What It Does |
-|-------|--------------|
-| **technical-orientation** | Explain technical concepts to non-engineers |
+- **technical-orientation** — Explain technical concepts to non-engineers
 
 ### AI Boosts
 
-| Skill | What It Does |
-|-------|--------------|
-| **prompt-improver** | Turn rough ideas into effective AI prompts |
-| **skill-customizer** | Adapt skills to your workflow |
-| **ralph-loop-creator** | Structured prompts for autonomous AI work |
-| **sensitive-content-scanner** | Detect PII/secrets before sharing |
+- **prompt-improver** — Turn rough ideas into effective AI prompts
+- **skill-customizer** — Adapt skills to your workflow
+- **ralph-loop-creator** — Structured prompts for autonomous AI work
+- **sensitive-content-scanner** — Detect PII/secrets before sharing
 
 ### Finance Ops
 
-| Skill | What It Does |
-|-------|--------------|
-| **credits-inventory** | Find startup credits and perks you're not using |
-| **monthly-financials** | Bookkeeper export → runway insights *(coming soon)* |
+- **credits-inventory** — Find startup credits and perks you're not using
+- **monthly-financials** — Bookkeeper export → runway insights *(coming soon)*
 
 ## Customization
 
@@ -90,8 +80,28 @@ skills/
 
 ## Contributing
 
-PRs welcome. Keep skills focused, include examples, test before submitting.
+Questions, comments, and issues welcome. Open an issue or submit a PR.
 
 ## License
 
-MIT
+MIT License
+
+Copyright (c) 2025
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
