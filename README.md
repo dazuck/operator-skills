@@ -6,8 +6,8 @@ Skills are instruction sets that tell Claude how to handle specific tasks. Inste
 
 ```
 /inbox-commander     → Triage your email
-/reality-check       → Pressure test a plan
 /coach               → Think through a problem
+/prompt-improver     → Turn rough ideas into effective prompts
 ```
 
 ## Install
@@ -27,18 +27,40 @@ cp -r operator-skills/skills/* ~/.claude/skills/
 
 ## Skills
 
+### Daily Operations
+
 | Skill | What It Does |
 |-------|--------------|
 | **inbox-commander** | Email triage and prioritization |
+
+### Strategic Thinking
+
+| Skill | What It Does |
+|-------|--------------|
 | **coach** | Expert thinking partner for any domain |
 | **reality-check** | Find gaps in plans before stakeholders do |
 | **interview** | Extract requirements with non-obvious questions |
 | **create-briefing** | Shareable briefing docs (human + AI readable) |
+
+### Research & Analysis
+
+| Skill | What It Does |
+|-------|--------------|
 | **technical-orientation** | Explain technical concepts to non-engineers |
+
+### AI Boosts
+
+| Skill | What It Does |
+|-------|--------------|
 | **prompt-improver** | Turn rough ideas into effective AI prompts |
 | **skill-customizer** | Adapt skills to your workflow |
 | **ralph-loop-creator** | Structured prompts for autonomous AI work |
 | **sensitive-content-scanner** | Detect PII/secrets before sharing |
+
+### Finance Ops
+
+| Skill | What It Does |
+|-------|--------------|
 | **credits-inventory** | Find startup credits and perks you're not using |
 | **monthly-financials** | Bookkeeper export → runway insights *(coming soon)* |
 
