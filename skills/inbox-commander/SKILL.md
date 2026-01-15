@@ -175,9 +175,9 @@ Keep it scannable. Group by computed urgency:
 
 ```
 🔴 TODAY (2)
-├── **Andrew** [Team] - TGE security review needs sign-off by EOD
+├── **Alex** [Team] - Q1 budget review needs sign-off by EOD
 │   Labels: Team, ic/needs-response
-│   Context: You're meeting him at 2pm
+│   Context: You're meeting them at 2pm
 │   → [Draft response] [Snooze 2h] [Mark waiting-on]
 │
 └── **Justworks** [Vendors] - Payroll processing failed
