@@ -1,173 +1,75 @@
 # Operator Skills
 
-Claude skills for startup operators, founders, and first-business-hires.
+Reusable Claude skills for startup operators and founders.
 
-**Stop prompting. Start doing.**
-
-These skills turn Claude into your operations co-pilot. They're not prompts—they're workflows that understand context, ask the right questions, and produce ready-to-use outputs.
-
-## What's a Skill?
-
-Skills are instruction sets that tell Claude how to handle specific tasks. Instead of explaining what you need every time, you invoke a skill and Claude knows exactly what to do.
+Skills are instruction sets that tell Claude how to handle specific tasks. Instead of explaining what you need every time, you invoke a skill and Claude knows what to do.
 
 ```
-/inbox-commander          → Triage your email, prioritize what matters
-/reality-check            → Pressure test your plan before you commit
-/coach                    → Strategic thinking partner when you're stuck
+/inbox-commander     → Triage your email
+/reality-check       → Pressure test a plan
+/coach               → Think through a problem
 ```
 
-## Quick Start
+## Install
 
-### 1. Install
+### Option A: Claude Code Plugin (Recommended)
 
 ```bash
-# Clone this repo
-git clone https://github.com/operator-superpowers/operator-skills.git
+claude mcp add-skill gh:dazuck/operator-skills
+```
 
-# Copy skills to Claude's skills directory
+### Option B: Manual
+
+```bash
+git clone https://github.com/dazuck/operator-skills.git
 cp -r operator-skills/skills/* ~/.claude/skills/
 ```
 
-### 2. Personalize
+## Skills
 
-Some skills have placeholders like `[YOUR_NAME]` that you should customize.
+| Skill | What It Does |
+|-------|--------------|
+| **inbox-commander** | Email triage and prioritization |
+| **coach** | Expert thinking partner for any domain |
+| **reality-check** | Find gaps in plans before stakeholders do |
+| **interview** | Extract requirements with non-obvious questions |
+| **create-briefing** | Shareable briefing docs (human + AI readable) |
+| **technical-orientation** | Explain technical concepts to non-engineers |
+| **prompt-improver** | Turn rough ideas into effective AI prompts |
+| **skill-customizer** | Adapt skills to your workflow |
+| **ralph-loop-creator** | Structured prompts for autonomous AI work |
+| **sensitive-content-scanner** | Detect PII/secrets before sharing |
+| **credits-inventory** | Find startup credits and perks you're not using |
+| **monthly-financials** | Bookkeeper export → runway insights *(coming soon)* |
+
+## Customization
+
+Skills work out of the box. Some have `[YOUR_*]` placeholders you can fill in.
 
 ```bash
-# See what needs customizing
+# See what's customizable
 grep -r "\[YOUR_" ~/.claude/skills/
 
-# Or run the personalization skill
+# Or use the interactive setup
 /personalize-skills
 ```
 
-See [CUSTOMIZATION-GUIDE.md](./CUSTOMIZATION-GUIDE.md) for the full list.
+See [CUSTOMIZATION-GUIDE.md](./CUSTOMIZATION-GUIDE.md) for details.
 
-### 3. Use
-
-In Claude Code or Claude Desktop:
-```
-/coach "I'm deciding between two job offers"
-/reality-check "My plan to launch in 2 weeks"
-/inbox-commander
-```
-
-## Available Skills
-
-### Daily Operations
-_The workflows you do every day_
-
-| Skill | What It Does |
-|-------|--------------|
-| **inbox-commander** | Triage email and process support requests in minutes |
-
-### Strategic Thinking
-_Think through problems before acting_
-
-| Skill | What It Does |
-|-------|--------------|
-| **coach** | Learn any domain fast with an expert thinking partner |
-| **reality-check** | Find the gaps in your plan before your stakeholders do |
-| **interview** | Flesh out requirements with non-obvious questions |
-| **create-briefing** | Create shareable briefing documents (dual-audience: human + AI) |
-
-### Research & Analysis
-_Investigate, evaluate, recommend_
-
-| Skill | What It Does |
-|-------|--------------|
-| **technical-orientation** | Explain technical things to non-engineers quickly |
-
-### AI Boosts
-_Advanced hacks that make AI work better_
-
-| Skill | What It Does |
-|-------|--------------|
-| **prompt-improver** | Turn rough ideas into AI prompts that actually work |
-| **skill-customizer** | Adapt any skill to your specific workflow |
-| **ralph-loop-creator** | Generate structured prompts for autonomous AI work |
-| **sensitive-content-scanner** | Scan files for sensitive content before sharing |
-
-### Role-Specific
-_Install if relevant to your responsibilities_
-
-**Finance Ops:**
-
-| Skill | What It Does |
-|-------|--------------|
-| **credits-inventory** | Find the startup credits you're not using |
-| **monthly-financials** | Turn bookkeeper's export into runway insights *(coming soon)* |
-
-## What's the Difference?
-
-**Claude can be your:**
-- **Thought partner** — Coach, Reality Check, Interview
-- **Tireless assistant** — Inbox Commander
-- **Expert researcher** — Technical Orientation
-- **AI enhancer** — Prompt Improver, Skill Customizer, Ralph Loop Creator
-
-## Skill Structure
-
-Each skill lives in its own directory:
+## Structure
 
 ```
 skills/
 ├── coach/
-│   ├── SKILL.md              # Main skill definition
-│   └── references/           # Supporting files
-│       ├── coaching-modes.md
-│       └── mental-models.md
-├── inbox-commander/
-│   ├── SKILL.md
-│   └── references/
-│       ├── classification-rules.md
-│       └── known-senders.md
+│   ├── SKILL.md           # Main skill
+│   └── references/        # Supporting context
 └── ...
 ```
 
-## Customization
-
-Skills work out of the box, but they're better when personalized.
-
-**Quick setup:**
-1. Read [CUSTOMIZATION-GUIDE.md](./CUSTOMIZATION-GUIDE.md)
-2. Fill in placeholders with your values
-3. Add your own context to `references/` files
-
-**Examples of customization:**
-- Add your preferred newsletter senders to inbox-commander
-- Set your knowledge archive path for coach
-- Add your investor relationships to credits-inventory
-
-## Platform Compatibility
-
-These skills work across Claude interfaces:
-
-| Platform | Status |
-|----------|--------|
-| Claude Code | Full support |
-| Claude Desktop | Full support |
-| Claude Co-work | Skills supported |
-| Claude API | Can load skills programmatically |
-
 ## Contributing
 
-Found a bug? Have an improvement? PRs welcome.
-
-Please:
-- Keep skills focused (one job per skill)
-- Include examples in SKILL.md
-- Test before submitting
-- No personal data in examples
+PRs welcome. Keep skills focused, include examples, test before submitting.
 
 ## License
 
-MIT License. See [LICENSE](./LICENSE).
-
-## About
-
-Built by operators, for operators. Part of the [Operator Superpowers](https://operatorsuperpowers.com) project.
-
----
-
-*Last synced: 2026-01-15*
-*Skills: 12 (11 active + 1 coming soon)*
+MIT
