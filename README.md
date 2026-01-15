@@ -30,17 +30,20 @@ cp -r operator-skills/skills/* ~/.claude/skills/
 ### Daily Operations
 
 - **inbox-commander** — Email triage and prioritization
+- **create-briefing** — Shareable briefing docs (human + AI readable)
+- **meeting-sidekick** — Meeting prep and recap *(coming soon)*
+- **weekly-pulse** — Metrics review and progress reporting *(coming soon)*
 
-### Strategic Thinking
+### Thinking Partner
 
 - **coach** — Expert thinking partner for any domain
 - **reality-check** — Find gaps in plans before stakeholders do
 - **interview** — Extract requirements with non-obvious questions
-- **create-briefing** — Shareable briefing docs (human + AI readable)
 
 ### Research & Analysis
 
 - **technical-orientation** — Explain technical concepts to non-engineers
+- **tool-comparison** — Evaluate tools and vendors systematically *(coming soon)*
 
 ### AI Boosts
 
