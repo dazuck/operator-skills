@@ -15,7 +15,8 @@ Skills are instruction sets that tell Claude how to handle specific tasks. Inste
 ### Claude Code
 
 ```bash
-claude mcp add-skill gh:dazuck/operator-skills
+git clone https://github.com/dazuck/operator-skills.git
+cp -r operator-skills/skills/* ~/.claude/skills/
 ```
 
 ### Claude Desktop
@@ -28,17 +29,6 @@ claude mcp add-skill gh:dazuck/operator-skills
 Skills load automatically when relevant. [Learn more about Skills](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
 
 > **Note:** Skills require Claude Pro, Max, Team, or Enterprise.
-
-### Manual
-
-Copy skill folders to your AI tool's custom instructions directory:
-
-```bash
-git clone https://github.com/dazuck/operator-skills.git
-cp -r operator-skills/skills/* ~/.claude/skills/
-```
-
-Works with any tool that supports markdown instruction files.
 
 ## Skills
 
