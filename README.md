@@ -29,38 +29,38 @@ cp -r operator-skills/skills/* ~/.claude/skills/
 
 ### Daily Operations
 
-- **inbox-commander** — Email triage and prioritization
-- **create-briefing** — Shareable briefing docs (human + AI readable)
-- **meeting-sidekick** — Meeting prep and recap *(coming soon)*
-- **weekly-pulse** — Metrics review and progress reporting *(coming soon)*
+- **inbox-commander** — Process email for fast action, clear priority, and always-improving rules
+- **create-briefing** — Synthesize session content into variable formats for both human and AI recipients
+- **meeting-sidekick** — Prep that actually prepares you, recaps that capture what matters *(coming soon)*
+- **weekly-pulse** — Surface the metrics that matter with context your team can act on *(coming soon)*
 
 ### Thinking Partner
 
-- **coach** — Expert thinking partner for any domain
-- **reality-check** — Find gaps in plans before stakeholders do
-- **interview** — Extract requirements with non-obvious questions
+- **coach** — Learn any domain fast with a radically candid advisor who challenges your thinking
+- **reality-check** — Pressure test plans with the skeptical questions your stakeholders will ask
+- **interview** — Surface the requirements you'd miss with targeted, non-obvious questions
 
 ### Research & Analysis
 
-- **technical-orientation** — Explain technical concepts to non-engineers
-- **tool-comparison** — Evaluate tools and vendors systematically *(coming soon)*
+- **technical-orientation** — Explain repos and technical things with diagrams and synthesis for non-engineers
+- **tool-comparison** — Evaluate tools and vendors with structured criteria and clear recommendations *(coming soon)*
 
 ### AI Boosts
 
-- **prompt-improver** — Turn rough ideas into effective AI prompts
-- **skill-customizer** — Adapt skills to your workflow
-- **ralph-loop-creator** — Structured prompts for autonomous AI work
-- **sensitive-content-scanner** — Detect PII/secrets before sharing
+- **prompt-improver** — Transform vague ideas into prompts that actually get what you want
+- **skill-customizer** — Adapt any skill to your tools, terms, and workflow
+- **ralph-loop-creator** — Structure autonomous AI work with phases, validation, and clear completion
+- **sensitive-content-scanner** — Catch PII, secrets, and private paths before you share
 
 ### Finance Ops
 
-- **credits-inventory** — Find startup credits and perks you're not using
-- **monthly-financials** — Bookkeeper export → runway insights *(coming soon)*
+- **credits-inventory** — Find the startup credits and perks you're paying for but not using
+- **monthly-financials** — Turn bookkeeper exports into runway insights and variance analysis *(coming soon)*
 
 ### People Ops
 
-- **hiring-helper** — Screen candidates against a proven hiring framework
-- **onboarding-plan** — New hire onboarding that doesn't wing it *(coming soon)*
+- **hiring-helper** — Screen candidates against a proven framework that spots what resumes miss
+- **onboarding-plan** — New hire onboarding with structure, not improvisation *(coming soon)*
 
 ## Customization
 
