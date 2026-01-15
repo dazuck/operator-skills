@@ -1,0 +1,8 @@
+{
+  "name": "operator-skills",
+  "version": "1.0.0",
+  "description": "Reusable Claude skills for startup operators and founders",
+  "author": {
+    "name": "Danny Zuckerman"
+  }
+}

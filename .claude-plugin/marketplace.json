@@ -1,0 +1,21 @@
+{
+  "name": "operator-skills",
+  "owner": {
+    "name": "Danny Zuckerman"
+  },
+  "metadata": {
+    "description": "Reusable Claude skills for startup operators and founders",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "operator-skills",
+      "description": "Reusable Claude skills for startup operators and founders",
+      "version": "1.0.0",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/dazuck/operator-skills.git"
+      }
+    }
+  ]
+}

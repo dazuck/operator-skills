@@ -15,20 +15,17 @@ Skills are instruction sets that tell Claude how to handle specific tasks. Inste
 ### Claude Code
 
 ```bash
-git clone https://github.com/dazuck/operator-skills.git
-cp -r operator-skills/skills/* ~/.claude/skills/
+claude plugin marketplace add dazuck/operator-skills
+claude plugin install operator-skills
 ```
 
 ### Claude Desktop
 
-1. Download the skill you want as a ZIP (or [download all](https://github.com/dazuck/operator-skills/archive/refs/heads/main.zip))
-2. Go to **Settings → Capabilities**
-3. Upload the ZIP file
-4. Toggle on the skills you want
+1. Download the skills you want as a ZIP (or [download all](https://github.com/dazuck/operator-skills/archive/refs/heads/main.zip))
+2. Go to **Settings → Capabilities** → Upload the ZIP file
+3. Toggle on the skills you want
 
-Skills load automatically when relevant. [Learn more about Skills](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
-
-> **Note:** Skills require Claude Pro, Max, Team, or Enterprise.
+> Skills require Claude Pro, Max, Team, or Enterprise. Skills load automatically when relevant. [Learn more](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
 
 ## Skills
 
