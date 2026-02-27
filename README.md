@@ -6,8 +6,8 @@ Skills are instruction sets that tell Claude how to handle specific tasks. Inste
 
 ```
 /coach               → Think through a problem with a radically candid advisor
-/writeup             → Turn work sessions into publishable content
-/handoff             → Wrap up a session with verification and handoff notes
+/investor-audits     → Draft accurate responses to investor audit requests
+/contract-review     → Get a risk assessment on any vendor or services contract
 ```
 
 ## Install
@@ -35,31 +35,37 @@ claude plugin install operator-skills
 - **reality-check** — Pressure test plans with the skeptical questions your stakeholders will ask
 - **interview** — Surface the requirements you'd miss with targeted, non-obvious questions
 
-### Engineering
-
-- **adversarial-verifier** — Deep verification that assumes nothing is correct; hunts hidden errors
-- **handoff** — Session wrap-up with verification, docs update, and handoff message
-
-### Writing & Documentation
+### Writing & Communication
 
 - **writeup** — Transform work sessions into publishable content across tweet, thread, or blog formats
 - **create-briefing** — Synthesize session content into variable formats for both human and AI recipients
 - **technical-orientation** — Explain repos and codebases with diagrams and synthesis for non-engineers
 
-### AI Tooling
+### Claude Workflows
 
+Tools for getting more out of Claude itself.
+
+- **adversarial-verifier** — Deep verification that assumes nothing is correct; hunts hidden errors
+- **handoff** — Session wrap-up with verification, docs update, and handoff message
+- **show-and-tell** — Prepare a demo artifact from the last 24 hours of work
 - **prompt-improver** — Transform vague ideas into prompts that actually get what you want
 - **skill-customizer** — Adapt any skill to your tools, terms, and workflow
 - **ralph-loop-creator** — Structure autonomous AI work with phases, validation, and clear completion criteria
 - **sensitive-content-scanner** — Catch PII, secrets, and private paths before you share
+- **personalize-skills** — Configure Operator Skills for your environment on first install
 
-### Finance Ops
+### Startup Ops
 
+- **inbox-commander** — GTD-style email triage with autonomous actions for clear-cut items
 - **credits-inventory** — Find the startup credits and perks you're paying for but not using
+- **monthly-financials** — Turn your bookkeeper's export into runway insights and variance analysis
+- **investor-audits** — Draft accurate responses to investor audit confirmations and portfolio reporting requests
+- **contract-review** — Risk assessment on vendor contracts, MSAs, SOWs, and NDAs
 
 ### People Ops
 
 - **hiring-helper** — Screen candidates against a proven framework that spots what resumes miss
+- **candidate-screening** — AI-powered candidate evaluation from Greenhouse with a high-agency framework
 
 ## Customization
 
