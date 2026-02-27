@@ -1,6 +1,6 @@
 ---
 name: technical-orientation
-description: Explain technical projects, codebases, tools, or documentation to a non-engineer. Use when the user says "orient me", "explain this repo", "what does this do", "get me up to speed", "break this down for me", or shares a GitHub URL asking for explanation. Also use when a non-technical person needs to understand something technical quickly.
+description: Explain technical projects or codebases to a non-engineer. Use for "orient me" or "explain this repo".
 ---
 
 # Technical Orientation
@@ -10,6 +10,7 @@ Help a savvy but non-technical operator understand technical projects, codebases
 ## Who This Is For
 
 A startup operator, founder, or business person who:
+
 - Needs to understand what technical things do without writing code
 - Wants to evaluate tools, make decisions, or manage technical teams
 - Is smart and capable but doesn't have an engineering background
@@ -28,6 +29,7 @@ Before diving in, give a single sentence that captures what this thing IS:
 ### 2. Explore Systematically
 
 For a codebase/repo:
+
 ```
 1. Check the root README.md first
 2. Look at package.json or equivalent for project structure
@@ -37,6 +39,7 @@ For a codebase/repo:
 ```
 
 For documentation/tools:
+
 ```
 1. Find the "what is this" or overview section
 2. Identify the core concepts (usually 3-5)
@@ -47,11 +50,13 @@ For documentation/tools:
 ### 3. Translate to Plain Language
 
 **Never use**:
+
 - Unexplained acronyms
 - Jargon without definition
 - "It's basically..." followed by more jargon
 
 **Always**:
+
 - Define technical terms the first time they appear
 - Use analogies to familiar concepts
 - Explain WHY something exists, not just WHAT it is
@@ -60,10 +65,10 @@ For documentation/tools:
 
 **Tables over paragraphs** for comparisons, features, or options:
 
-| Component | What It Does | Why It Matters |
-|-----------|--------------|----------------|
-| agent-core | Runs AI agents | The engine that makes everything work |
-| database | Stores conversation history | AI can "remember" across sessions |
+| Component  | What It Does                | Why It Matters                        |
+| ---------- | --------------------------- | ------------------------------------- |
+| agent-core | Runs AI agents              | The engine that makes everything work |
+| database   | Stores conversation history | AI can "remember" across sessions     |
 
 **ASCII diagrams** for showing how pieces connect:
 
@@ -72,6 +77,7 @@ Data Source → Processing → API → Your Application
 ```
 
 **Bullet hierarchies** for nested concepts:
+
 - Main concept
   - Sub-concept A
   - Sub-concept B
@@ -79,6 +85,7 @@ Data Source → Processing → API → Your Application
 ### 5. Always Answer "So What?"
 
 For every component or concept, answer:
+
 - **What problem does this solve?**
 - **Who would use this and when?**
 - **What happens if this didn't exist?**
@@ -87,12 +94,12 @@ For every component or concept, answer:
 
 End with concrete next steps based on what they might want to do:
 
-| If You Want To... | Do This |
-|-------------------|---------|
-| Just understand it | Read X, Y, Z docs |
-| Try it yourself | Run these commands |
-| Evaluate it | Compare against these criteria |
-| Go deeper | Explore these files/concepts |
+| If You Want To...  | Do This                        |
+| ------------------ | ------------------------------ |
+| Just understand it | Read X, Y, Z docs              |
+| Try it yourself    | Run these commands             |
+| Evaluate it        | Compare against these criteria |
+| Go deeper          | Explore these files/concepts   |
 
 ## Output Structure
 

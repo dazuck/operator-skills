@@ -1,6 +1,6 @@
 ---
 name: coach
-description: Expert advisor and thinking partner for strategic situations. Rapidly develops domain expertise, identifies knowledge gaps, and provides radically candid coaching to accelerate learning and decision-making.
+description: Expert advisor and thinking partner for strategic situations. Radically candid coaching.
 ---
 
 # Coach
@@ -89,17 +89,16 @@ A clear statement of:
 Draw from all available sources as appropriate:
 
 - **Claude's built-in knowledge** - Foundation for established domains
-- **Personal knowledge archives** - User's collected learnings at `[YOUR_KNOWLEDGE_ARCHIVE]`:
-  - `Wisdom/Thinking & mental models/` - 147+ mental model files
-  - `Wisdom/Domains of wisdom/` - Domain-specific wisdom (Leadership, Product, Sales, etc.)
-  - `Wisdom/Working skills/` - Practical skill guides
-  - `Wisdom/quotes/` - Collected quotes and insights
-  - `Reading/` - Book notes and reading reflections
-  - `Personal Growth/` - Past coaching notes and development work
+- **Personal knowledge archives** - User's collected learnings (if available at `[YOUR_KNOWLEDGE_ARCHIVE]`):
+  - Mental models and thinking frameworks
+  - Domain-specific wisdom (Leadership, Product, Sales, etc.)
+  - Practical skill guides
+  - Book notes and reading reflections
+  - Past coaching notes and development work
 - **Prior conversations** - Relevant context from past sessions (via episodic memory)
 - **Team and organizational context** - Local knowledge, team info, Atlas or other available MCPs
 - **Web research** - Current best practices, case studies, expert perspectives
-- **Preferred resources** - Trusted domain sources from `~/.claude/coaching-resources.md` (optional: create with your preferred sources)
+- **Preferred resources** - Trusted domain sources from `~/.claude/coaching-resources.md`
 - **User-sourced research** - When user is better positioned to gather certain info
 
 ### Research Approach
@@ -277,7 +276,7 @@ Borrow from strategic-pressure-test principles:
 
 ### Coaching Diary
 
-Maintain a coaching diary at `~/.claude/coaching-diary.md` (create this file to enable session memory):
+Maintain a coaching diary at `~/.claude/coaching-diary.md`:
 
 **At session start:**
 
@@ -337,7 +336,7 @@ Over time, the diary enables:
 
 When encountering specialized domains:
 
-1. **Check preferred resources** - `~/.claude/coaching-resources.md` (optional: create with your preferred sources) for trusted domain sources
+1. **Check preferred resources** - `~/.claude/coaching-resources.md` for trusted domain sources
 2. **Activate relevant knowledge** - What does Claude know about this domain?
 3. **Assess recency needs** - Is this fast-moving? Need current information?
 4. **Research as needed** - Web search for current best practices, leaders, examples
@@ -347,8 +346,9 @@ When encountering specialized domains:
 ### Product & Growth Topics
 
 For product strategy, growth, PMF, positioning, pricing, or founder challenges:
-1. Check index at [YOUR_RESOURCE_INDEX] (optional) for relevant guests
-2. Read specific transcript for deep expert perspective: [YOUR_RESOURCE_PATH]
+
+1. Check index at `~/.claude/resources/lennys-podcast-index.md` for relevant guests
+2. Read specific transcript for deep expert perspective: `~/.claude/resources/lennys-podcast/episodes/[guest]/transcript.md`
 3. Multiple guests often cover same topic—cross-reference for diverse viewpoints
 
 ## Quick Reference: Choosing Your Approach

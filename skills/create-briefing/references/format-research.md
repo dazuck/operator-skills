@@ -9,6 +9,7 @@ Sources and best practices that informed the create-briefing skill templates.
 - [Scribe: Types of Business Documentation](https://scribe.com/library/types-of-business-documentation) - 10+ types with examples for 2025
 
 ### Key Insight
+
 > "Most leaders skim. They look for what the document is about, what you want from them, and what the following action is. If they must hunt through paragraphs and images, they stop reading and postpone the decision."
 
 ## Amazon 6-Pager / One-Pager
@@ -19,6 +20,7 @@ Sources and best practices that informed the create-briefing skill templates.
 - [Lark Suite: Amazon 6-Pager](https://www.larksuite.com/en_us/blog/amazon-6-pager) - What, Why, and How (2025)
 
 ### Standard Structure
+
 1. Introduction
 2. Goals
 3. Tenets
@@ -27,6 +29,7 @@ Sources and best practices that informed the create-briefing skill templates.
 6. Strategic Priorities
 
 ### Key Rules
+
 - No bullet points, no graphics, no fluff
 - Full sentences and paragraphs that flow naturally
 - Appendix for supporting graphs, images, tables (no page limit)
@@ -39,11 +42,13 @@ Sources and best practices that informed the create-briefing skill templates.
 - [Lambros Petrou: RFC Template](https://www.lambrospetrou.com/articles/rfc-template/) - Practical template
 
 ### Companies Using RFCs
+
 - LinkedIn: "Strong culture of writing RFCs and doing RFC reviews"
 - Spotify: "RFCs and ADRs are deeply embedded part of the culture"
 - Uber: Evolved format with approver fields for complex proposals
 
 ### Common Sections
+
 - Scope of work
 - Problem space / requirements
 - Proposed solution with implementation specs
@@ -56,12 +61,14 @@ Sources and best practices that informed the create-briefing skill templates.
 - [LogRocket: DACI Framework Examples](https://blog.logrocket.com/product-management/daci-framework-examples-template/) - Examples and template
 
 ### DACI Roles
+
 - **D = Driver**: Corrals stakeholders, collates info, drives to decision
 - **A = Approver**: The ONE person who makes the final decision
 - **C = Contributors**: Subject-area knowledge, voice but not vote
 - **I = Informed**: Need to know about progress
 
 ### When to Use
+
 - Complex decisions with multiple stakeholders
 - High-stakes organizational decisions
 - Cross-functional projects
@@ -73,6 +80,7 @@ Sources and best practices that informed the create-briefing skill templates.
 - [Status.net: 20 Weekly Update Templates](https://status.net/articles/weekly-update-email-templates-examples/) - Examples
 
 ### Best Practices
+
 - Send at predictable times (Monday morning or Friday afternoon)
 - Use consistent format week to week
 - Short, digestible sections with large headings
@@ -85,9 +93,11 @@ Sources and best practices that informed the create-briefing skill templates.
 - [incident.io: Post-Mortem Template](https://incident.io/hubs/post-mortem/incident-post-mortem-template) - Simple template
 
 ### Key Principle
+
 > "A truly effective post-mortem focuses on what went wrong, not who went wrong. When teams embrace a blameless approach, post-mortems become powerful tools for growth."
 
 ### Common Sections
+
 - Incident summary (duration, causes, effects)
 - Timeline of events
 - Root cause analysis ("5 Whys")
@@ -102,6 +112,7 @@ Sources and best practices that informed the create-briefing skill templates.
 - [GetGuru: Executive Summary Template](https://www.getguru.com/templates/executive-summary) - PDF + examples
 
 ### What to Include
+
 - Overview describing what report/proposal will entail
 - Problem you're solving
 - Steps/methods to solve it

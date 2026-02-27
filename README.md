@@ -5,9 +5,9 @@ Reusable Claude skills for startup operators and founders.
 Skills are instruction sets that tell Claude how to handle specific tasks. Instead of explaining what you need every time, you invoke a skill and Claude knows what to do.
 
 ```
-/inbox-commander     → Triage your email
-/coach               → Think through a problem
-/prompt-improver     → Turn rough ideas into effective prompts
+/coach               → Think through a problem with a radically candid advisor
+/writeup             → Turn work sessions into publishable content
+/handoff             → Wrap up a session with verification and handoff notes
 ```
 
 ## Install
@@ -29,40 +29,38 @@ claude plugin install operator-skills
 
 ## Skills
 
-### Daily Operations
-
-- **inbox-commander** — Process email for fast action, clear priority, and always-improving rules
-- **create-briefing** — Synthesize session content into variable formats for both human and AI recipients
-- **meeting-sidekick** — Prep that actually prepares you, recaps that capture what matters *(coming soon)*
-- **weekly-pulse** — Surface the metrics that matter with context your team can act on *(coming soon)*
-
 ### Thinking Partner
 
 - **coach** — Learn any domain fast with a radically candid advisor who challenges your thinking
 - **reality-check** — Pressure test plans with the skeptical questions your stakeholders will ask
 - **interview** — Surface the requirements you'd miss with targeted, non-obvious questions
 
-### Research & Analysis
+### Engineering
 
-- **technical-orientation** — Explain repos and technical things with diagrams and synthesis for non-engineers
-- **tool-comparison** — Evaluate tools and vendors with structured criteria and clear recommendations *(coming soon)*
+- **adversarial-verifier** — Deep verification that assumes nothing is correct; hunts hidden errors
+- **handoff** — Session wrap-up with verification, docs update, and handoff message
 
-### AI Boosts
+### Writing & Documentation
+
+- **writeup** — Transform work sessions into publishable content across tweet, thread, or blog formats
+- **create-briefing** — Synthesize session content into variable formats for both human and AI recipients
+- **technical-orientation** — Explain repos and codebases with diagrams and synthesis for non-engineers
+
+### AI Tooling
 
 - **prompt-improver** — Transform vague ideas into prompts that actually get what you want
 - **skill-customizer** — Adapt any skill to your tools, terms, and workflow
-- **ralph-loop-creator** — Structure autonomous AI work with phases, validation, and clear completion
+- **ralph-loop-creator** — Structure autonomous AI work with phases, validation, and clear completion criteria
 - **sensitive-content-scanner** — Catch PII, secrets, and private paths before you share
+- **sync-skills-public** — Export sanitized skills to a public repo with automatic personal content removal
 
 ### Finance Ops
 
 - **credits-inventory** — Find the startup credits and perks you're paying for but not using
-- **monthly-financials** — Turn bookkeeper exports into runway insights and variance analysis *(coming soon)*
 
 ### People Ops
 
 - **hiring-helper** — Screen candidates against a proven framework that spots what resumes miss
-- **onboarding-plan** — New hire onboarding with structure, not improvisation *(coming soon)*
 
 ## Customization
 

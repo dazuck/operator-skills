@@ -20,6 +20,7 @@ Based on @GeoffreyHuntley's Ralph Wiggum technique, @callam53's workflow guide.
 - **Phase decomposer** that breaks work into iterative chunks
 - **Validation designer** that ensures each phase has clear success criteria
 - **Kanban translator** that treats phases like tickets with ACs
+- **Quality gate** that runs blind review before declaring ready
 
 ### What This Skill IS NOT
 
@@ -34,7 +35,11 @@ Use AFTER you have clarity on what to build:
 Rough idea → /interview → /ralph-loop-creator → /ralph-loop
                   ↑              ↑
             (if spec has    (THIS SKILL)
-             ambiguities)
+             ambiguities)     │
+                              ├── Generate PROMPT.md
+                              ├── Blind Review (subagent)
+                              ├── Fix issues if confidence < 7
+                              └── Output ready-to-run command
 ```
 
 ## Activation Protocol
@@ -64,8 +69,20 @@ When invoked with `/ralph-loop-creator <input> [output-path]`:
    - Decision log
    - Success metrics
 
-5. **Output**:
+5. **Blind Review** (critical step):
+   - Spawn a subagent with ZERO context about the task
+   - Have them review the PROMPT.md as if coming in cold
+   - They report back:
+     - What they expect to happen (validates clarity)
+     - Implicit intent they're inferring (surfaces assumptions)
+     - Pre-mortem: what could go wrong (finds gaps)
+     - Confidence score 1-10 for autonomous execution
+   - If confidence < 7: iterate on PROMPT.md to address issues
+   - See "Blind Review Protocol" section below
+
+6. **Output**:
    - Write to specified path (or suggest default)
+   - Include confidence score from blind review
    - Provide the exact `/ralph-loop` command to run
 
 ## PROMPT.md Template
@@ -269,19 +286,21 @@ Suggest max iterations based on complexity:
 
 ## Output Format
 
-After generating PROMPT.md, provide:
+After generating PROMPT.md and running blind review, provide:
 
 ```markdown
 ## Ralph Loop Ready
 
 Created: `[path/to/PROMPT.md]`
 
-**To run:**
-\`\`\`
-/ralph-loop "$(cat [path/to/PROMPT.md])" --max-iterations [N] --completion-promise "[PROMISE]"
-\`\`\`
+### Blind Review Results
 
-**Or with file reference:**
+**Confidence:** [X]/10
+**Key findings:** [1-2 sentence summary of what reviewer caught]
+**Changes made:** [What you fixed based on review, or "None needed"]
+
+### To Run
+
 \`\`\`
 /ralph-loop [path/to/PROMPT.md] --max-iterations [N] --completion-promise "[PROMISE]"
 \`\`\`
@@ -310,6 +329,80 @@ Include these patterns in generated prompts:
 
 5. **Testing loop** - Every phase should have runnable validation
 
+## Blind Review Protocol
+
+**Purpose:** Pressure-test the PROMPT.md before autonomous execution. A fresh perspective catches ambiguities that the author is blind to.
+
+### How to Run the Blind Review
+
+Spawn a subagent using the Task tool with this prompt template:
+
+```
+You are a senior technical reviewer specializing in PRDs and implementation plans
+for autonomous AI execution. You have NO prior context about this project -
+you're coming in completely blind.
+
+Your task: Review the PRD at `[PATH_TO_PROMPT.md]` and provide a critical assessment.
+
+## Review Instructions
+
+1. **Read the PRD thoroughly** - understand what's being built
+2. **Read relevant existing code** mentioned in the PRD to understand patterns
+3. **Produce a review with these sections:**
+
+### A. What I Expect to Happen
+Describe concretely what an AI agent executing this plan would build.
+Be specific about deliverables.
+
+### B. Implicit Intent I'm Inferring
+What is NOT explicitly stated but seems to be the underlying goal?
+What assumptions is this plan making?
+
+### C. Pre-Mortem: What Could Go Wrong
+Imagine this ralph loop fails. Most likely causes:
+- Ambiguous requirements that could be misinterpreted
+- Missing context an AI agent would need
+- Technical pitfalls or edge cases not addressed
+- Validation criteria too vague or too strict
+- Dependencies or blockers not mentioned
+
+### D. Confidence Assessment
+On a scale of 1-10, how confident are you that an AI agent could execute
+this plan successfully without human intervention? Explain your rating.
+
+### E. Recommended Changes (if any)
+Specific, actionable changes to improve the PRD before execution.
+
+Be brutally honest. Find problems BEFORE execution, not after.
+```
+
+### Interpreting Results
+
+| Confidence | Action                                           |
+| ---------- | ------------------------------------------------ |
+| 8-10       | Ready to execute. Minor polish optional.         |
+| 6-7        | Address critical issues, re-review optional.     |
+| 4-5        | Significant gaps. Must fix and re-review.        |
+| 1-3        | Fundamental problems. Consider /interview again. |
+
+### Common Issues the Blind Review Catches
+
+1. **Underspecified types** - "Create a dataclass" without field definitions
+2. **Undefined formulas** - "Calculate P&L" without the actual formula
+3. **No test cases** - Validation says "tests pass" but no expected inputs/outputs
+4. **Integration ambiguity** - How new code relates to existing code unclear
+5. **Fragile references** - Links to other branches, external docs that may not exist
+
+### When to Skip Blind Review
+
+- Very simple prompts (2-3 phases, well-trodden patterns)
+- User explicitly requests skipping
+- Time-critical situations where speed > thoroughness
+
+Default: **Always run blind review** for prompts with 4+ phases or novel implementations.
+
+---
+
 ## Integration with Your Workflow
 
 This skill generates prompts compatible with your `/ralph-loop` plugin:
@@ -317,6 +410,7 @@ This skill generates prompts compatible with your `/ralph-loop` plugin:
 ```
 /ralph-loop-creator "Build a CLI tool that converts markdown to PDF"
 → Creates: ./docs/md-to-pdf/PROMPT.md
+→ Runs blind review (confidence: 8/10)
 → Suggests: /ralph-loop "$(cat ./docs/md-to-pdf/PROMPT.md)" --max-iterations 30 --completion-promise "MD_TO_PDF_COMPLETE"
 ```
 
@@ -324,6 +418,6 @@ For complex features, use the full workflow:
 
 ```
 /interview docs/X/prd.md              # Flesh out requirements
-/ralph-loop-creator docs/X/prd.md     # Generate structured prompt
+/ralph-loop-creator docs/X/prd.md     # Generate structured prompt + blind review
 /ralph-loop ...                        # Execute
 ```
