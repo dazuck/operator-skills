@@ -52,7 +52,6 @@ claude plugin install operator-skills
 - **skill-customizer** — Adapt any skill to your tools, terms, and workflow
 - **ralph-loop-creator** — Structure autonomous AI work with phases, validation, and clear completion criteria
 - **sensitive-content-scanner** — Catch PII, secrets, and private paths before you share
-- **sync-skills-public** — Export sanitized skills to a public repo with automatic personal content removal
 
 ### Finance Ops
 
